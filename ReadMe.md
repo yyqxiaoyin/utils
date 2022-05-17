@@ -1,28 +1,43 @@
-# SmallUtils       [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)  [![Download](https://api.bintray.com/packages/xiaoshubin/maven/small-utils/images/download.svg?version=1.0.0) ](https://bintray.com/xiaoshubin/maven/small-utils/1.0.0/link)
+# SmallUtils  [![](https://jitpack.io/v/xiaoshubin/Utils.svg)](https://jitpack.io/#xiaoshubin/Utils) [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-用kotlin写的常用的工具集
+用kotlin写的Android常用的工具集
 
 # Gradle引入
 
-```
-implementation 'com.smallcake.utils:small-utils:1.0.0'
-```
-
-
-
-**SpannableStringUtils设置富文本**例如下面的World设置成粗斜体红色，点击弹出消息
+Step1 仓库地址新增
 
 ```
-textView.buildSpannableString {  
-     addText("你好")  
-     addText("World!"){ 
-         isItalic = true
-         isBold = true
-         textColor = Color.RED
-         onClick{
-            showToast("难道你不觉得中文中夹杂着英文真的很low吗？")
-         }  
-     }
+allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+```
+
+Step2 项目build.gradle加入
+
+```
+implementation 'com.github.xiaoshubin:utils:1.0.0'
+```
+
+#工具使用 
+
+--------
+
+**SpannableStringUtils一个对TextView进行了扩展的设置富文本工具**
+
+例如下面的World设置成粗斜体红色，点击弹出消息
+
+```
+textView.buildSpannableString(true) {  
+    addText("你好")  
+    addText("World!"){ 
+        isItalic = true
+        isBold = true
+        textColor = Color.RED
+        onClick{showToast("难道你不觉得中文中夹杂着英文真的很low吗？")}  
+    }
 }
 ```
 

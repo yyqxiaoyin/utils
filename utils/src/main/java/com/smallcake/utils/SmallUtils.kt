@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 
 /**
- *  com.smallcake.utils
+ * MyApplication --  com.smallcake.utils
  * Created by Small Cake on  2017/9/13 10:28.
  * 必须初始化
  */
