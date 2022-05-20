@@ -3,7 +3,6 @@ package com.smallcake.utils
 import android.app.ActivityManager
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
-import com.smallcake.smallutils.SmallUtils
 
 /**
  * 更好的管理Activity
