@@ -11,8 +11,8 @@ android {
     compileSdk 31
 
     defaultConfig {
-        minSdk 21
-        targetSdk 31
+        minSdk 14
+        targetSdk 28
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -51,14 +51,6 @@ afterEvaluate {
                 version ="1.0.0"                //当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
             }
         }
-        /*repositories {
-            maven {
-                def baseUrl = buildDir.getParent()
-                def releasesRepoUrl = "$baseUrl/repos/releases"
-                def snapshotsRepoUrl = "$baseUrl/repos/snapshots"
-                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
-            }
-        }*/
     }
 }
 

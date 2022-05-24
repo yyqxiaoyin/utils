@@ -1,4 +1,4 @@
-# SmallUtils  [![](https://jitpack.io/v/xiaoshubin/Utils.svg)](https://jitpack.io/#xiaoshubin/Utils) [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+# SmallUtils  [![](https://jitpack.io/v/xiaoshubin/utils.svg)](https://jitpack.io/#xiaoshubin/utils)[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 用kotlin写的Android常用的工具集
 
@@ -18,7 +18,7 @@ allprojects {
 Step2 项目build.gradle加入
 
 ```
-implementation 'com.github.xiaoshubin:utils:1.0.0'
+implementation 'com.github.xiaoshubin:utils:1.0.1'
 ```
 
 #工具使用 
