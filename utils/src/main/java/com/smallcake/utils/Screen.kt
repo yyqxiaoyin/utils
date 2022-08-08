@@ -12,6 +12,7 @@ import android.view.View.MeasureSpec
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.annotation.FloatRange
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -27,8 +28,7 @@ object Screen {
     val height: Int
         get() {
             val displayMetrics = DisplayMetrics()
-            val windowManager =
-                SmallUtils.context?.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+            val windowManager = SmallUtils.context?.getSystemService(Context.WINDOW_SERVICE) as WindowManager
             windowManager.defaultDisplay.getRealMetrics(displayMetrics)
             return displayMetrics.heightPixels
         }
@@ -40,8 +40,7 @@ object Screen {
     val width: Int
         get() {
             val displayMetrics = DisplayMetrics()
-            val windowManager =
-                SmallUtils.context?.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+            val windowManager = SmallUtils.context?.getSystemService(Context.WINDOW_SERVICE) as WindowManager
             windowManager.defaultDisplay.getRealMetrics(displayMetrics)
             return displayMetrics.widthPixels
         }
