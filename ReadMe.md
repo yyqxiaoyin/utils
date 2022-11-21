@@ -21,11 +21,17 @@ Step2 项目build.gradle加入
 implementation 'com.github.xiaoshubin:utils:1.0.1'
 ```
 
+Step3 在MyApplication中初始化
+
+```
+SmallUtils.init(this)
+```
+
 #工具使用 
 
 --------
 
-**SpannableStringUtils一个对TextView进行了扩展的设置富文本工具**
+**SpannableStringUtils：TextView富文本工具扩展类**
 
 例如下面的World设置成粗斜体红色，点击弹出消息
 
