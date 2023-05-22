@@ -13,6 +13,6 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "SmallUtils"
+rootProject.name = "JZTakePhoto"
 include ':app'
-include ':utils'
+include ':takephoto'
